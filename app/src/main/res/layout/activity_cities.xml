@@ -1,0 +1,204 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vladimir.gotravel.CitiesActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/actBar"
+        android:clickable="false"
+        android:background="#ff222222">
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/btnBack"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/btn_back"
+            android:background="#00ffffff" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imvLogo"
+            android:src="@drawable/logo36"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btnBack"
+            android:layout_toEndOf="@+id/btnBack"
+            android:contentDescription="" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/title_activity_cities"
+            android:id="@+id/tvTitle"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffffff" />
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etFrom"
+        android:textSize="28sp"
+        android:hint="@string/cityFrom"
+        android:singleLine="true"
+        android:background="#ffffffff"
+        android:layout_below="@+id/actBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:capitalize="words" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etTo"
+        android:textSize="28sp"
+        android:singleLine="true"
+        android:layout_below="@+id/etFrom"
+        android:layout_alignLeft="@+id/etFrom"
+        android:layout_alignStart="@+id/etFrom"
+        android:layout_marginTop="30dp"
+        android:hint="@string/cityTo"
+        android:background="#ffffffff"
+        android:layout_alignRight="@+id/etFrom"
+        android:layout_alignEnd="@+id/etFrom"
+        android:capitalize="words" />
+
+    <ImageButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/btnMap"
+        android:src="@drawable/btn_map"
+        android:background="#00ffffff"
+        android:layout_marginBottom="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/etTo"
+        android:layout_alignStart="@+id/etTo"
+        android:contentDescription="@string/btnMap" />
+
+    <ImageButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/btnOk"
+        android:src="@drawable/btn_done"
+        android:background="#00ffffff"
+        android:layout_alignTop="@+id/btnMap"
+        android:layout_alignRight="@+id/etTo"
+        android:layout_alignEnd="@+id/etTo"
+        android:contentDescription="@string/btnDone" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/etBdg"
+        android:textSize="30sp"
+        android:hint="enter your budget"
+        android:singleLine="true"
+        android:background="#ffffffff"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/etTo"
+        android:layout_alignStart="@+id/etTo"
+        android:maxLength="9" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ltValute"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/btnOk"
+        android:layout_alignEnd="@+id/btnOk">
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="$"
+            android:id="@+id/btnVal1"
+            android:textSize="24sp"
+            android:background="#00ffffff"
+            android:textColor="#ff888888"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnVal2"
+            android:layout_toEndOf="@+id/btnVal2" />
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="₴"
+            android:id="@+id/btnVal2"
+            android:textSize="24sp"
+            android:background="#00ffffff"
+            android:textColor="#ff888888"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnVal3"
+            android:layout_toEndOf="@+id/btnVal3" />
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="€"
+            android:id="@+id/btnVal3"
+            android:textSize="24sp"
+            android:background="#00ffffff"
+            android:textColor="#ff888888"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ltPers"
+        android:layout_below="@+id/ltValute"
+        android:layout_alignLeft="@+id/etBdg"
+        android:layout_alignStart="@+id/etBdg"
+        android:layout_alignRight="@+id/etBdg"
+        android:layout_alignEnd="@+id/etBdg"
+        android:layout_marginTop="30dp">
+
+        <EditText
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/etPers"
+            android:text="1"
+            android:textSize="25sp"
+            android:singleLine="true"
+            android:background="#ffffffff"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="8dp"
+            android:maxLength="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Persons"
+            android:id="@+id/tvPers"
+            android:textSize="30sp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/etPers"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

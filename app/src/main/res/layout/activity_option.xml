@@ -1,0 +1,223 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vladimir.gotravel.OptionActivity">
+
+    <CheckBox
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:text="@string/cbPlane"
+        android:id="@+id/cbPlane"
+        android:checked="false"
+        android:textSize="28sp"
+        android:background="#ffffffff"
+        android:layout_below="@+id/tvTrans"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="4dp" />
+
+    <CheckBox
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:text="@string/cbTrain"
+        android:id="@+id/cbTrane"
+        android:checked="false"
+        android:textSize="28sp"
+        android:background="#ffffffff"
+        android:layout_below="@+id/cbPlane"
+        android:layout_alignLeft="@+id/cbBus"
+        android:layout_alignStart="@+id/cbBus"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="4dp" />
+
+    <CheckBox
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:text="@string/cbBus"
+        android:id="@+id/cbBus"
+        android:checked="false"
+        android:textSize="28sp"
+        android:longClickable="false"
+        android:background="#ffffffff"
+        android:layout_below="@+id/cbTrane"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="4dp" />
+
+    <ImageButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/btnOk"
+        android:src="@drawable/btn_done"
+        android:background="#00ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/cbHostel"
+        android:layout_alignEnd="@+id/cbHostel"
+        android:layout_marginBottom="28dp"
+        android:contentDescription="@string/btnDone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/tvTransfer"
+        android:id="@+id/tvTrans"
+        android:textSize="24sp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/tvStayIn"
+        android:id="@+id/tvStay"
+        android:layout_below="@+id/cbBus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp" />
+
+    <CheckBox
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:text="@string/cbHostel"
+        android:id="@+id/cbHostel"
+        android:checked="false"
+        android:textSize="28sp"
+        android:longClickable="false"
+        android:background="#ffffffff"
+        android:paddingLeft="4dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/relativeLayout2"
+        android:clickable="false"
+        android:background="#ff222222"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/btnBack"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/btn_back"
+            android:background="#00ffffff" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/logo36"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btnBack"
+            android:layout_toEndOf="@+id/btnBack"
+            android:contentDescription="" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/title_activity_option"
+            android:id="@+id/textView2"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:id="@+id/linearLayout"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/tvStay"
+        android:layout_alignRight="@+id/btnOk"
+        android:layout_alignEnd="@+id/btnOk"
+        android:gravity="center"
+        android:background="#ffffffff">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:text="@string/cbHotel"
+            android:id="@+id/cbHotel"
+            android:checked="false"
+            android:textSize="28sp"
+            android:longClickable="false"
+            android:background="#ffffffff"
+            android:paddingLeft="4dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ltStars"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="4dp">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/star_ok"
+                android:background="#00ffffff"
+                android:id="@+id/btnStar1"
+                android:contentDescription="@string/btnStar" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/star"
+                android:background="#00ffffff"
+                android:id="@+id/btnStar2"
+                android:layout_toRightOf="@+id/btnStar1"
+                android:layout_toEndOf="@+id/btnStar1"
+                android:contentDescription="@string/btnStar" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/star"
+                android:background="#00ffffff"
+                android:id="@+id/btnStar3"
+                android:layout_toRightOf="@+id/btnStar2"
+                android:layout_toEndOf="@+id/btnStar2"
+                android:contentDescription="@string/btnStar" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/star"
+                android:background="#00ffffff"
+                android:id="@+id/btnStar4"
+                android:layout_toRightOf="@+id/btnStar3"
+                android:layout_toEndOf="@+id/btnStar3"
+                android:contentDescription="@string/btnStar" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/star"
+                android:background="#00ffffff"
+                android:id="@+id/btnStar5"
+                android:layout_toRightOf="@+id/btnStar4"
+                android:layout_toEndOf="@+id/btnStar4"
+                android:contentDescription="@string/btnStar" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">GoTravel</string>
+    <string name="title_activity_cities">Cities</string>
+    <string name="title_activity_calendar">Choose the date</string>
+    <string name="title_activity_option">Options</string>
+    <string name="title_activity_results">Results</string>
+
+    <string name="star">\@drawable/star</string>
+    <string name="star_ok">\@drawable/star_ok</string>
+    <string name="btnDone">btnDone</string>
+    <string name="cbPlane">Plane</string>
+    <string name="cbTrain">Train</string>
+    <string name="cbBus">Bus</string>
+    <string name="cbHotel">Hotel</string>
+    <string name="cbHostel">Hostel</string>
+    <string name="tvTransfer">Transfer</string>
+    <string name="tvStayIn">Stay in</string>
+    <string name="btnStar">btnStar</string>
+    <string name="tvOptions">Options</string>
+    <string name="imvLogo">imgLogo</string>
+    <string name="btnBack">btnBack</string>
+    <string name="tvPromo">GoTravel - Your own assistant in creating unforgettable trip.</string>
+    <string name="btnCrJ">Create a journey</string>
+    <string name="tvMain">GoTravel</string>
+    <string name="imvMain">imvMain</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="btnMap">btnMap</string>
+    <string name="cityTo">city to</string>
+    <string name="cityFrom">city from</string>
+    <string name="title_activity_book">BookActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_card">CardActivity</string>
+
+</resources>
